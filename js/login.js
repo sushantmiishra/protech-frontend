@@ -19,8 +19,8 @@ function login(){
     .then( res => res.json() )
     .then( res=>{
         if( res.auth ){ 
-            localStorage.setItem("username", res.username)
-            localStorage.setItem("islogin", true)
+            sessionstorage.setItem("username", res.username)
+            sessionstorage.setItem("islogin", true)
             alert(`${res.msg} as ${res.username}`)
             history.go(-1)
         }
