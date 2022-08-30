@@ -10,9 +10,10 @@ function login(){
     obj = JSON.stringify(obj)
     fetch('https://desolate-mesa-16623.herokuapp.com/login',{
         method: 'POST', 
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: {    
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*' },
         body: obj,
     })
     .then( res => res.json() )

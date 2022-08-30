@@ -12,9 +12,10 @@ function register(){
     obj = JSON.stringify(obj)
     fetch('https://desolate-mesa-16623.herokuapp.com/register',{
         method: 'POST', 
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: {    
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*' },
         body: obj,
     })
     .then( res => {
