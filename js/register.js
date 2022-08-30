@@ -10,7 +10,7 @@ function register(){
         username
     };
     obj = JSON.stringify(obj)
-    fetch('http://localhost:3500/register',{
+    fetch('https://git.heroku.com/desolate-mesa-16623.git/register',{
         method: 'POST', 
         headers: {
           'Content-Type': 'application/json',
