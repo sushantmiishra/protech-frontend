@@ -8,7 +8,7 @@ function login(){
         password : pass
     };
     obj = JSON.stringify(obj)
-    fetch('https://git.heroku.com/desolate-mesa-16623.git/login',{
+    fetch('https://desolate-mesa-16623.herokuapp.com/login',{
         method: 'POST', 
         headers: {
           'Content-Type': 'application/json',
