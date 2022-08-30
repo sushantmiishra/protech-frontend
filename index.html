@@ -210,8 +210,8 @@
 </script>
 <script>
   function logout(){
-    sessionstorage.setItem("islogin",false)
-    sessionstorage.setItem("username","")
+    sessionStorage.setItem("islogin",false)
+    sessionStorage.setItem("username","")
     document.getElementById('login').style.display='block'
     document.getElementById('logout').style.display='none'
   }
